@@ -13,7 +13,7 @@ body {
     min-height: 100vh; /* Ensure body takes full viewport height */
 }
 
-.header {
+header {
     background-color: #333; /* Dark grey background */
     color: white;
     text-align: center;
@@ -21,11 +21,12 @@ body {
     padding-bottom: 50px; /* Make space for the nav banner */
 }
 
-.header h2 {
+header h2 {
     display: flex;
     margin: 0;
     padding: 20px;
     align-items: flex-start;
+	height: 4rem;
 }
 
 .nav-container {
@@ -38,7 +39,7 @@ body {
     right: 0;
 }
 
-.header nav {
+header nav a {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -52,19 +53,16 @@ main {
     box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
 }
 
-main h1 {
-    margin: 0;
+.main-content {
+    flex: 2; /* 2/3 of the space */
+    background-color: #f4f4f4; /* Light grey background for main content */
     padding: 20px;
 }
 
-main h1:nth-child(1) {
-    flex: 2; /* 2/3 of the space */
-    background-color: #f4f4f4; /* Light grey background for main content */
-}
-
-main h1:nth-child(2) {
+.aside-content {
     flex: 1; /* 1/3 of the space */
     background-color: #e9e9e9; /* Slightly darker grey background for aside content */
+    padding: 20px;
 }
 
 footer {
@@ -72,5 +70,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    height: 20rem;
+    height: 10rem;
 }
