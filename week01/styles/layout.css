@@ -1,0 +1,76 @@
+/* styles/layout.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure html and body take full height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Define the rows for header, main content, and footer */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+.header {
+    background-color: #333; /* Dark grey background */
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px; /* Make space for the nav banner */
+}
+
+.header h2 {
+    display: flex;
+    margin: 0;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000; /* Black background for nav links */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.header nav {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+main {
+    display: flex;
+    padding: 0; /* Remove padding if you want no space around main content */
+    height: 100%; /* Make main element take full available height */
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+main h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+main h1:nth-child(1) {
+    flex: 2; /* 2/3 of the space */
+    background-color: #f4f4f4; /* Light grey background for main content */
+}
+
+main h1:nth-child(2) {
+    flex: 1; /* 1/3 of the space */
+    background-color: #e9e9e9; /* Slightly darker grey background for aside content */
+}
+
+footer {
+    background-color: #333; /* Dark grey background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 20rem;
+}
