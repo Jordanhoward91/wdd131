@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jordan Howard</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Jordan Howard | Homepage">
+    <meta name="author" content="Jordan Howard">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Jordan Howard</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/jordanhoward91/">LinkedIn</a>
+            <a href="https://byui.instructure.com">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/josh/1?lang=eng#:~:text=9%20Have%20not%20I%20commanded%20thee%3F%20Be%20strong%20and%20of%20a%20good%20courage%3B%20be%20not%20afraid%2C%20neither%20be%20thou%20dismayed%3A%20for%20the%20Lord%20thy%20God%20is%20with%20thee%20whithersoever%20thou%20goest.">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="image1.jpg" alt="Image 1 Description">
+            <p>Content for section 1.</p>
+            <ul>
+                <li><a href="https://example.com/resource1">Resource 1</a></li>
+                <li><a href="https://example.com/resource2">Resource 2</a></li>
+                <li><a href="https://example.com/resource3">Resource 3</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://example.com/resource4">Resource 4</a></li>
+                <li><a href="https://example.com/resource5">Resource 5</a></li>
+                <li><a href="https://example.com/resource6">Resource 6</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        // JavaScript to dynamically update the year and last modified date
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+</html>
