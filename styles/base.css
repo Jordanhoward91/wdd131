@@ -60,6 +60,16 @@ main {
     flex-basis: calc(66.666% - 0.5rem);
 }
 
+.card:first-of-type img {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+    float: right;
+    margin: 20px 20px 0px 0px;
+    max-width: 20%;
+    height: auto;
+}
+
 .card:nth-child(2) {
     flex-basis: calc(33.333% - 0.5rem);
 }
@@ -75,8 +85,17 @@ main {
     border-top-right-radius: 5px;
 }
 
+#section2 ul {
+    display: grid;
+    margin-top: 50%;
+}
+
 .card-content {
     padding: 1rem;
+}
+
+.card p {
+    margin-top: 5%;
 }
 
 .card img {
@@ -94,4 +113,8 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+footer .highlight {
+    color: #ffd700;
 }
