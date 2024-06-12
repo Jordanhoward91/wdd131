@@ -85,6 +85,43 @@ main {
     border-top-right-radius: 5px;
 }
 
+.hero-upper p {
+    margin-top: 5%;
+}
+
+.hero-lower h2 {
+    margin-top: 3%;
+    background-color: transparent;
+    color: #000;
+    padding: 0.5rem 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    text-align: center;
+}
+
+.hero-lower hr {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.hero-lower {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-lower img {
+    max-width: 100%;
+    align-self: flex-start; 
+}
+
+.hero-lower p {
+    align-self: flex-start;
+    margin-left: 10rem;
+    margin-top: -5rem;
+}
+
 #section2 ul {
     display: grid;
     margin-top: 50%;
@@ -92,16 +129,6 @@ main {
 
 .card-content {
     padding: 1rem;
-}
-
-.card p {
-    margin-top: 5%;
-}
-
-.card img {
-    max-width: 100%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 footer {
