@@ -19,10 +19,6 @@ h1 {
     font-size: 2rem;
 }
 
-h1 .highlight {
-    color: #ffd700;
-}
-
 nav {
     display: flex;
     justify-content: space-around;
