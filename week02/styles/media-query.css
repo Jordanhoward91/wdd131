@@ -1,0 +1,26 @@
+/* Use Google Font - Roboto */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style header, main, and footer */
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #bbb;
+    background-color: #e6f2ff;
+}
+
+/* Declare the main element to be a CSS grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Style the section elements */
+section {
+    padding: 1rem;
+    background-color: #ffffff;
+}
