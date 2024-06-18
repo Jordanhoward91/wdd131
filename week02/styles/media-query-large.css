@@ -8,6 +8,6 @@
     
     /* Change main element to display two columns of equal size */
     main {
-        grid-template-columns: 1fr 1fr; /* Two columns of equal size */
+        grid-template-columns: 1fr 1fr;
     }
 }
