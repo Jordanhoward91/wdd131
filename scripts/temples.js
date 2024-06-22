@@ -1,46 +1,46 @@
+// Update the footer with the current year and last modified date
 document.addEventListener("DOMContentLoaded", function() {
-    // Set current year and last modified date in footer
-    const currentYearElement = document.getElementById('currentYear');
-    const lastModifiedElement = document.getElementById('lastModified');
+    const currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+    
+    const lastModified = document.lastModified;
+    document.getElementById('lastModified').textContent = lastModified;
+});
 
-    if (currentYearElement && lastModifiedElement) {
-        const currentYear = new Date().getFullYear();
-        currentYearElement.textContent = currentYear;
+// Hamburger menu functionality
+const nav = document.querySelector('nav ul');
+const hamburger = document.createElement('button');
+hamburger.textContent = '☰';
+hamburger.classList.add('hamburger');
+document.querySelector('header').appendChild(hamburger);
 
-        const lastModified = document.lastModified;
-        lastModifiedElement.textContent = lastModified;
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('show');
+});
+
+// Style for the hamburger button and show class
+const style = document.createElement('style');
+style.textContent = `
+    .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2em;
     }
 
-    // Function to handle hamburger menu based on viewport width
-    function handleHamburgerMenu() {
-        const header = document.querySelector('header');
-        const nav = header.querySelector('nav');
-        const hamburger = document.createElement('button');
-        hamburger.textContent = '☰'; // Hamburger icon or text
-        hamburger.classList.add('hamburger');
+    @media (max-width: 767px) {
+        .hamburger {
+            display: block;
+        }
 
-        if (window.innerWidth <= 768) { // Adjust breakpoint as needed
-            header.appendChild(hamburger);
+        nav ul {
+            display: none;
+        }
 
-            // Toggle navigation menu on hamburger click
-            hamburger.addEventListener('click', () => {
-                nav.querySelector('ul').classList.toggle('show');
-            });
-
-            // Close navigation menu when clicking outside of it
-            document.addEventListener('click', (event) => {
-                if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
-                    nav.querySelector('ul').classList.remove('show');
-                }
-            });
-        } else {
-            if (header.contains(hamburger)) {
-                header.removeChild(hamburger);
-            }
+        nav ul.show {
+            display: block;
         }
     }
-
-    // Call handleHamburgerMenu initially and on window resize
-    handleHamburgerMenu();
-    window.addEventListener('resize', handleHamburgerMenu);
-});
+`;
+document.head.appendChild(style);
