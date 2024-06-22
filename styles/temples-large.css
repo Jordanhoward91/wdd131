@@ -1,17 +1,14 @@
-/* Styles for larger view */
+/* Styles specific to larger views */
 @media (min-width: 768px) {
-    nav ul {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
     main {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1em;
+        max-width: 1200px; /* Adjust max-width as needed */
+        margin: 0 auto; /* Center main content horizontally */
     }
 
-    footer {
-        position: relative;
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+        gap: 1em;
+        justify-items: center; /* Center items horizontally */
     }
 }
