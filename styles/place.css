@@ -17,6 +17,18 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
 }
 
 .green-bar {
@@ -44,7 +56,7 @@ header {
 
 .data h2, .weather h2 {
     background-color: var(--secondary-color);
-    color:#ccc;
+    color: #ccc;
     padding: 10px;
     margin: -20px -20px 20px -20px;
     position: relative;
@@ -84,6 +96,16 @@ footer {
         padding: 20px;
     }
 
+    .weather h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weather-icon {
+        margin-top: 10px;
+    }
+
     footer {
         position: static;
         padding: 20px;
@@ -121,6 +143,15 @@ footer {
 
     .weather-info p {
         margin: 10px 0;
+    }
+
+    .weather h2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .weather-icon {
+        margin-left: 10px;
     }
 
     .hero img {
