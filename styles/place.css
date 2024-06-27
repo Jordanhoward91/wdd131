@@ -1,5 +1,7 @@
 :root {
     --primary-color: #D21034; /* Example primary color */
+    --secondary-color: #247D51; /* Green color */
+    --gray-color: #ccc; /* Gray color */
 }
 
 body {
@@ -17,19 +19,36 @@ header {
     text-align: center;
 }
 
+.green-bar {
+    background-color: var(--secondary-color);
+    height: 20px;
+}
+
+.red-bar {
+    background-color: var(--primary-color);
+    height: 10px;
+}
+
 .hero img {
-    width: 100%;
+    width: 160%;
     height: auto;
     display: block;
 }
 
-.weather {
+.data, .weather {
     margin: 20px;
+    padding: 20px;
+    background-color: var(--gray-color);
+    position: relative;
 }
 
-.weather-info {
-    border: 1px solid #ccc;
+.data h2, .weather h2 {
+    background-color: var(--secondary-color);
+    color:#ccc;
     padding: 10px;
+    margin: -20px -20px 20px -20px;
+    position: relative;
+    z-index: 1;
 }
 
 .weather-info p {
@@ -41,32 +60,58 @@ header {
 }
 
 footer {
-	background-color: var(--primary-color);
+    background-color: var(--primary-color);
     text-align: center;
     padding: 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
-	color: #fff;
+    color: #fff;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
-    .weather-info {
+    header {
+        font-size: 1.5em;
+    }
+
+    .data, .weather {
         text-align: center;
+        margin-top: 20px;
+    }
+
+    .data-info, .weather-info {
+        padding: 20px;
+    }
+
+    footer {
+        position: static;
+        padding: 20px;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     }
 }
 
 @media only screen and (min-width: 769px) {
-    .weather {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+    .hero {
+        position: relative;
     }
 
-    .weather-info {
-        flex-basis: 50%;
-        padding: 20px;
+    .data {
+        position: absolute;
+        top: 170px;
+        left: 0px;
+        width: 25%;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 2;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 200px;
+        right: 0;
+        width: 30%;
+        background-color: rgba(255, 255, 255, 0.8); /* Transparent gray */
+        z-index: 2;
     }
 
     .weather-info h3 {

@@ -21,8 +21,9 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Provo Utah</h1>
+        <h1>Utah</h1>
     </header>
+    <div class="green-bar"></div>
 
     <main>
         <section class="hero">
@@ -35,19 +36,28 @@
                  src="images/hero-large.webp"
                  alt="Hero Image">
         </section>
+        <div class="red-bar"></div>
 
-		<section class="data">
-			<h3>Data</h3>
-			<div class="data-info">
-
-			</div>
-		</section>
-
+        <section class="data">
+            <h2>Data</h2>
+            <div class="data-info">
+                <p>Area: <span id="area"></span></p>
+                <p>Population: <span id="population"></span></p>
+                <p>Capital: <span id="capital"></span></p>
+                <p>Languages: <span id="languages"></span></p>
+                <p>Currency: <span id="currency"></span></p>
+                <p>Time Zone: <span id="timeZone"></span></p>
+                <p>Calling Code: <span id="callingCode"></span></p>
+                <p>Internet TLD: <span id="internetTLD"></span></p>
+            </div>
+        </section>
+        <hr>
         <section class="weather">
             <h2>Weather</h2>
             <div class="weather-info">
-                <p>Temperature: 25°C</p>
-                <p>Wind Speed: 8 km/h</p>
+                <p>Temperature: <span id="temperature"></span>°C</p>
+                <p>Conditions: <span id="conditions"></span></p>
+                <p>Wind Speed: <span id="windSpeed"></span> km/h</p>
                 <p>Windchill Factor: <span id="provoWindchill"></span></p>
             </div>
         </section>
