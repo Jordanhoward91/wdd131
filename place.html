@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jordan Howard</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Jordan Howard | Homepage">
+    <meta name="author" content="Jordan Howard">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <!-- Reference getdates.js with the defer attribute -->
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Provo Utah</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img srcset="images/hero-large.webp 1200w,
+                         images/hero-medium.webp 800w,
+                         images/hero-small.webp 400w"
+                 sizes="(min-width: 1200px) 1200px,
+                        (min-width: 800px) 800px,
+                        400px"
+                 src="images/hero-large.webp"
+                 alt="Hero Image">
+        </section>
+
+		<section class="data">
+			<h3>Data</h3>
+			<div class="data-info">
+
+			</div>
+		</section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-info">
+                <p>Temperature: 25°C</p>
+                <p>Wind Speed: 8 km/h</p>
+                <p>Windchill Factor: <span id="provoWindchill"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Jordan Howard, Idaho, USA. Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
