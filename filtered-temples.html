@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jordan Howard</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Jordan Howard | Homepage">
+    <meta name="author" content="Jordan Howard">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <!-- Reference getdates.js with the defer attribute -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button class="hamburger">&#9776;</button> <!-- Changed hamburger content -->
+        <nav>
+            <ul>
+                <li><a id="home" href="#">Home</a></li> <!-- Added ID to Home link for filtering -->
+                <li><a id="old" href="#">Old</a></li> <!-- Added ID to Old link for filtering -->
+                <li><a id="new" href="#">New</a></li> <!-- Added ID to New link for filtering -->
+                <li><a id="large" href="#">Large</a></li> <!-- Added ID to Large link for filtering -->
+                <li><a id="small" href="#">Small</a></li> <!-- Added ID to Small link for filtering -->
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="temple-container"> <!-- Added ID to main for temple card container -->
+        <!-- Temple cards will be dynamically generated here -->
+    </main>
+        
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Jordan Howard, Idaho, USA. Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
