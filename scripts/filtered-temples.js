@@ -108,21 +108,21 @@ const temples = [
     location: "Provo, Utah",
     dedication: "2016, March, 20",
     area: 116642,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/2018/800x500/Provo-City-Center-Temple01.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/2018/400x250/Provo-City-Center-Temple01.jpg"
   },
   {
     templeName: "Sydney Australia Temple",
     location: "New South Wales, Australia",
     dedication: "1984, September, 20",
     area: 554423,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sydney-australia/1280x800/sydney-australia-temple-sunset-1116152-wallpaper.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sydney-australia/400x250/sydney-australia-temple-sunset-1116152-wallpaper.jpg"
   },
   {
     templeName: "Mount Timpanogos Temple",
     location: "Pleasant Grove, Utah",
     dedication: "1996, October, 13",
     area: 1007007,
-    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mount-timpanogos-utah/1280x800/mount-timpanogos-temple-lds-994445-wallpaper.jpg"
+    imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mount-timpanogos-utah/400x250/mount-timpanogos-temple-lds-994445-wallpaper.jpg"
   }
   // Add more temple objects here...
 ];
