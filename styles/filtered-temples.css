@@ -74,18 +74,19 @@ main h2 {
     justify-items: center; /* Center items horizontally */
 }
 
-figure {
-    margin: 0; /* Remove default margin for <figure> */
+.temple-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-figure img {
+.temple-card img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* Example styling for images */
-}
-
-figure figcaption {
-    text-align: center;
+    border-radius: 8px;
+    margin-top: 1em;
 }
 
 footer {
