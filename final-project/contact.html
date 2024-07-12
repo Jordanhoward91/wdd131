@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaho Hunting - Contact Us - Jordan Howard</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Jordan Howard | Contact Us">
+    <meta name="author" content="Jordan Howard">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regulations.html">Regulations</a></li>
+        <li><a href="hunting-areas.html">Hunting Areas</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Please fill out the form below to get in touch.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Jordan Howard, Idaho, USA.</p>
+    <p id="lastModified" class="highlight"></p>
+  </footer>
+  <script src="main.js"></script>
+  <script src="lazyload.js"></script>
+</body>
+</html>
