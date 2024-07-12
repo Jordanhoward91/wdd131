@@ -42,18 +42,36 @@ label {
     font-weight: bold;
 }
 
-textarea {
+/* Stretch form elements horizontally */
+select, input[type="date"], textarea, input[type="text"] {
     width: 100%;
-    height: 100px;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .rating {
+    text-align: center;
+}
+
+.rating-stars {
+    margin-bottom: 10px;
+}
+
+.rating-stars .star {
     font-size: 30px;
+    color: #ffd700; /* Gold color for stars */
+    cursor: pointer;
+}
+
+.rating-radio {
+    text-align: center;
+    margin-top: 5px;
 }
 
 input[type="submit"] {
-    background-color: #333;
-    color: #fff;
+    background-color: #EFEFEF;
+    font-weight: bold;
+    color: #040404;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
