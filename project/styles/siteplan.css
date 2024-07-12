@@ -43,10 +43,21 @@ p {
     color: #fff;
 }
 
+.wireframe-container {
+    display: flex;
+    justify-content: space-around; /* Distribute items with space around */
+    margin-top: 20px; /* Space above the container */
+}
+
+.wireframe-item {
+    flex: 1; /* Each item takes equal space */
+    text-align: center; /* Center align content */
+}
+
 .wireframe-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+    max-width: 25%; /* Ensures images are responsive */
+    height: auto; /* Maintains aspect ratio */
+    margin-bottom: 20px; /* Space between images */
 }
 
 footer {
