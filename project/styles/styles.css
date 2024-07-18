@@ -68,19 +68,49 @@ footer {
 
 /* Additional styles */
 h1 {
+    display: grid;
+    justify-content: center;
     font-size: 2em;
-    color: #333;
+    color: #030000;
 }
 
 section {
     display: grid;
     justify-content: center;
     padding: 20px;
+    margin-top: -25%;
+}
+
+p {
+    color: #030000;
 }
 
 h4 {
     display: grid;
     justify-content: center;
-    margin-top: -47%;
+    margin-top: -7%;
     color:#333;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.image-container a {
+    flex: 1; /* Each link takes equal space */
+    margin-right: 10px; /* Add space between images */
+    text-align: center; /* Center align content */
+}
+
+.image-container a img {
+    max-width: 100%;
+    height: auto;
+}
+
+.crane {
+    max-width: 100%;
+    height: auto;
 }
