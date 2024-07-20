@@ -35,32 +35,41 @@ header nav ul li a {
     padding: 10px 15px;
 }
 
+
 /* Main section styles */
-.main-section {
+.hero-section {
     display: flex;
     justify-content: center; /* Center align horizontally */
     align-items: center; /* Center align vertically */
     flex-direction: column; /* Stack items vertically */
     text-align: center;
     min-height: 100vh; /* Ensure section takes at least full viewport height */
-    background: url('../images/hunting-stock.jpg') no-repeat center center/cover; /* Background image */
-    color: #fff;
-    padding: 20px;
+    color: #333;
 }
 
-.main-section h1 {
+.hero-section h1 {
     font-size: 3em;
     margin-bottom: 20px;
 }
 
-h1 {
-	text-align: center;
+.hero-section article {
+    background-color: rgba(255, 255, 255, 0.9); /* Light gray background with opacity */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Soft shadow */
+    max-width: 800px; /* Limit box width */
+    width: 100%; /* Full width within its container */
+    text-align: left; /* Align text inside the box to the left */
 }
 
-.main-section article {
-    max-width: 800px; /* Limit article width for readability */
-    margin: 0 auto; /* Center align the article within its container */
-    text-align: left; /* Adjust text alignment within the article */
+.hero-section article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.hero-section article ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 /* Footer styles */
@@ -69,7 +78,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+	position: relative;
     bottom: 0;
     width: 100%;
 }
