@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Apply settings
   }
 
-  // Hunting areas filtering
+  // Hunt Planner filtering
   const huntingAreas = [
     { name: 'Area 1', type: 'Forest', size: 'Large' },
     { name: 'Area 2', type: 'Mountain', size: 'Medium' },
