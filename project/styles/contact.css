@@ -35,14 +35,32 @@ header nav ul li a {
 
 /* Main section styles */
 main {
-    padding: 20px;
-    text-align: center;
+    position: relative;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+    z-index: -1; /* Place behind other content */
 }
 
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
+	display: grid;
+	justify-content: center;
+    position: relative;
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent white background for better readability */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
