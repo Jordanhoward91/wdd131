@@ -43,7 +43,6 @@ header nav ul li a {
     align-items: center; /* Center align vertically */
     flex-direction: column; /* Stack items vertically */
     text-align: center;
-    min-height: 100vh; /* Ensure section takes at least full viewport height */
     color: #333;
 }
 
@@ -69,11 +68,12 @@ header nav ul li a {
 
 .hero-section article ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 35px;
 }
 
 /* Footer styles */
 footer {
+	margin-top: 3%;
     background-color: #333;
     color: white;
     text-align: center;
