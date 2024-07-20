@@ -65,22 +65,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-/* Additional styles */
-h1 {
-    font-size: 2em;
-    color: #333;
-}
-
-section {
-    display: grid;
-    justify-content: center;
-    padding: 20px;
-}
-
-h4 {
-    display: grid;
-    justify-content: center;
-    margin-top: -47%;
-    color:#333;
-}
